@@ -1,0 +1,95 @@
+#beaches {
+  margin-top: -1px;
+  padding: 106px 140px 305px 223px;
+  background: linear-gradient(180deg, #010a20 30%, rgba(1, 10, 32, 0) 500%),
+    url("../../images/beaches.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .texts-wrapper {
+      width: 40%;
+      h1 {
+        font-size: 42px;
+        line-height: 50px;
+        font-weight: 700;
+        color: var(--white-color);
+      }
+
+      p {
+        margin: 30px 0;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        color: var(--light-gray);
+        width: 80%;
+      }
+
+      .btn {
+        padding: 16px 40px;
+        background: var(--red-color);
+        color: var(--white-color);
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        border: none;
+        border-radius: 32px;
+      }
+
+      .btn:hover {
+        background: var(--white-color);
+        color: var(--red-color);
+      }
+    }
+
+    .image-wrapper {
+      .image {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  #beaches {
+    padding: 40px 31px 38px 30px;
+
+    .wrapper {
+      width: 100%;
+      flex-direction: column-reverse;
+      gap: 41px;
+
+      .texts-wrapper {
+        width: 100%;
+        h1 {
+          font-size: 40px;
+          line-height: 46px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 26px;
+          width: 100%;
+        }
+
+        .btn {
+          padding: 22px 0;
+          width: 100%;
+        }
+      }
+
+      .image-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}

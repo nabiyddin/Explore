@@ -1,0 +1,140 @@
+#explore {
+  padding: 127px 190px 0 159px;
+  background: url("../../images/explore-img.png");
+  position: relative;
+  height: 2207px;
+  background-position: center;
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 75px;
+    font-weight: 700;
+    color: var(--ink-color);
+  }
+
+  .image {
+    display: none;
+  }
+
+  .images-wrapper {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 31px;
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 1414px;
+    left: 0;
+    padding: 200px 162px 180px 162px;
+    width: 100%;
+    height: 794px;
+    background: var(--ink-color);
+    color: var(--light-gray);
+    text-align: center;
+
+    .texts-wrapper {
+      h1 {
+        font-size: 60px;
+        line-height: 90px;
+        font-weight: 700;
+        color: var(--white-color);
+      }
+
+      .text-p {
+        margin: 37px auto 39px auto;
+        width: 35%;
+        color: var(--light-gray);
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+      }
+      .wrapper-titles {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+
+        .title {
+          width: 26%;
+
+          span {
+            font-size: 43px;
+            line-height: 50px;
+            font-weight: 700;
+            color: var(--red-color);
+          }
+
+          p {
+            margin-top: 19px;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            color: var(--light-gray);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  #explore {
+    padding: 25px 31px 0 30px;
+    width: 100%;
+
+    h2 {
+      font-size: 40px;
+      line-height: 46px;
+    }
+
+    .image {
+      display: block;
+      margin-top: 23px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .images-wrapper {
+      display: none;
+    }
+
+    .wrapper {
+      padding: 72px 32px 69px 30px;
+      height: 1000px;
+
+      .texts-wrapper {
+        flex-direction: column;
+        gap: 57px;
+
+        h1 {
+          font-size: 40px;
+          line-height: 46px;
+        }
+
+        .text-p {
+          width: 100%;
+          margin: 57px 0 0 0;
+        }
+
+        .wrapper-titles {
+          margin-top: 60px;
+          flex-direction: column;
+          text-align: center;
+          gap: 40px;
+          width: 100%;
+
+          .title {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

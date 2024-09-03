@@ -1,0 +1,36 @@
+:root {
+  --dmsans-font: "DM Sans";
+  --roboto-font: "Roboto";
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --red-color: #dd2242;
+  --gray-color: #939393;
+  --light-gray: #e0e0e0;
+  --dark-gray-color: #6f7787;
+  --ink-color: #010a20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: var(--dmsans-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,96 @@
+#hills {
+  padding: 249px 503px 256px 493px;
+  position: relative;
+
+  .texts-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 0 50px;
+
+    h1 {
+      font-size: 42px;
+      line-height: 50px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 32px auto 36px auto;
+      color: var(--dark-gray-color);
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 400;
+      width: 74%;
+    }
+
+    .btn {
+      padding: 18px 56px;
+      background: var(--red-color);
+      color: var(--white-color);
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      border: none;
+      border-radius: 32px;
+    }
+
+    .btn:hover {
+      background: rgb(68, 169, 46);
+      color: wheat;
+    }
+  }
+
+  .img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  #hills {
+    padding: 230px 32px 116px 29px;
+    margin: 0;
+
+    .texts-wrapper {
+      margin: 100px 0 0 0;
+      h1 {
+        font-size: 40px;
+        line-height: 46px;
+      }
+
+      p {
+        margin: 36px auto 41px auto;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .btn {
+        padding: 23px 0;
+        width: 100%;
+      }
+    }
+
+    .img1 {
+      position: absolute;
+      top: 140px;
+      left: 40px;
+      rotate: 50deg;
+      width: 50%;
+      z-index: -1;
+    }
+
+    .img2 {
+      width: 70%;
+      z-index: -1;
+      bottom: -130px;
+    }
+  }
+}
